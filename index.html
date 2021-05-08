@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" type="module"></script>
+    <title>CatnDog</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cat & Dog</h1>
+        <img class="headerBanner" src="./img/header-banner.png" alt="catsndogs-banner">
+    </header>
+    <main>
+        <form class="createForm">
+            <p>Create your pet</p>
+            <input type="radio" name="choosePet" id="chooseCat" checked>
+            <label for="chooseCat">Cat</label>
+            <input type="radio" name="choosePet" id="chooseDog">
+            <label for="chooseDog">Dog</label><br>
+            <label for="petName">Name:</label>
+            <input type="text" id="petName"><br>
+            <label for="petAge">Age:</label>
+            <input type="number" min="0" id="petAge"><br>
+            <label for="petGender">Gender:</label>
+            <select id="petGender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            <input type="submit" id="createPet" value="Create!">
+        </form>
+        <div id="allPetsContainer">
+            <div id='allPetsTitle'>All your pets</div>
+        </div>
+        <div id='errorModal' class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Ups!</h2>
+                <div id='errDescription'></div>
+            </div>
+        </div>
+
+        <div id='foodModal' class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Favorite food</h2>
+                <img src='' id='petFood'>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

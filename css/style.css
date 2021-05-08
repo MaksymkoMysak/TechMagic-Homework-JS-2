@@ -1,0 +1,156 @@
+header {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    font-family: 'Monaco', monospace;
+}
+
+.headerBanner {
+    height: 300px;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    font-family: 'Monaco', monospace;
+}
+
+.createForm {
+    border: 2px dashed cadetblue;
+    padding-bottom: 5px;
+    width: 300px;
+    margin: auto;
+}
+
+.createForm {
+    text-align: center;
+}
+
+input[type='radio'] {
+    margin: auto;
+}
+
+label[for='petName'], label[for='petAge'], label[for='petGender'] {
+    float: left;
+    margin-left: 10px;
+}
+
+input:not([type='radio'], [type='submit']), select {
+    float: right;
+    margin-right: 10px;
+}
+
+input:not([type='radio']) {
+    border: none;
+    border-bottom: 2px solid cadetblue;
+}
+
+select {
+    border: 2px solid cadetblue;
+}
+
+input[type='submit'] {
+    float: right;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    background-color: cadetblue;
+    border: none;
+}
+
+#allPetsContainer {
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: inline-block;
+    width: 20%;
+    min-width: 250px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.card p {
+    text-align: left;
+    color: dimgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card button {
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    background-color: cadetblue;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px dashed red;
+    width: 20%;
+    height: 130px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#foodModal .modal-content {
+    border: 5px dashed cadetblue;
+    height: 270px;
+}
+
+#petFood {
+    width: 300px;
+    height: 200px;
+}
