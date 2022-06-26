@@ -1,3 +1,4 @@
+
 header {
     text-align: center;
     position: relative;
@@ -20,7 +21,7 @@ main {
 }
 
 .createForm {
-    border: 2px dashed cadetblue;
+    border: 2px double rgb(255, 151, 53);
     padding-bottom: 5px;
     width: 300px;
     margin: auto;
@@ -46,11 +47,11 @@ input:not([type='radio'], [type='submit']), select {
 
 input:not([type='radio']) {
     border: none;
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 2px solid rgb(255, 151, 53);
 }
 
 select {
-    border: 2px solid cadetblue;
+    border: 2px solid rgb(255, 151, 53);
 }
 
 input[type='submit'] {
@@ -60,7 +61,7 @@ input[type='submit'] {
     font-size: 15px;
     width: 100px;
     height: 30px;
-    background-color: cadetblue;
+    background-color: rgb(255, 151, 53);
     border: none;
 }
 
@@ -93,7 +94,7 @@ input[type='submit'] {
     font-size: 15px;
     width: 80px;
     height: 30px;
-    background-color: cadetblue;
+    background-color: rgb(255, 151, 53);
     border: none;
     margin-bottom: 20px;
 }
@@ -127,7 +128,7 @@ input[type='submit'] {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 5px dashed red;
+    border: 5px double red;
     width: 20%;
     height: 130px;
 }
@@ -146,11 +147,15 @@ input[type='submit'] {
 }
 
 #foodModal .modal-content {
-    border: 5px dashed cadetblue;
+    border: 5px double rgb(255, 151, 53);
     height: 270px;
 }
 
 #petFood {
     width: 300px;
     height: 200px;
+}
+
+.headerPet {
+    color: rgb(255, 151, 53);
 }

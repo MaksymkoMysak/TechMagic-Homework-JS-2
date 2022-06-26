@@ -5,6 +5,7 @@ import errorHandler from './Error.js';
 async function fetchImg(url) {
     const response = await fetch(url);
     const urlData = await response.json();
+    console.log(urlData)
     return urlData;
 }
 
@@ -13,7 +14,7 @@ const createImageGetter = () => {
         createImageGetter - outer function
         Lexical Environment - {urlCat, urlDog, func}
      */
-    const urlCat = 'https://thatcopy.pw/catapi/rest/';
+    const urlCat = 'https://api.thecatapi.com/v1/images/search';
     const urlDog = 'https://dog.ceo/api/breeds/image/random';
     /* 
         function, that is returned -  inner function
@@ -25,7 +26,7 @@ const createImageGetter = () => {
             and then goes upper - in Lexical Environment of outer(createImageGetter) function.
         */
         if (pet === 'cat') {
-            return (await fetchImg(urlCat)).url;
+            return (await fetchImg(urlCat))[0].url;
         }
         if (pet === 'dog') {
             return (await fetchImg(urlDog)).message;
@@ -153,6 +154,7 @@ const createPet = async (e) => {
         if (document.getElementById('chooseCat').checked) {
             try {
                 imgUrl = await imgGetter('cat');
+                console.log(imgUrl)
                 newPet = new Cat(petName, petAge, petGender, imgUrl);
             } catch (e) {
                 errorHandler(e);
